@@ -1,0 +1,153 @@
+
+html {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+ 
+}
+
+/* Setting global font */
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+
+}
+
+body {
+    background: black url('../img/backgrnd2.jpg') no-repeat; /* Background pattern from Subtle Patterns */
+    background-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Layout for the deck */
+.deck {
+    width: 660px;
+    height: 680px;
+    background: linear-gradient(160deg, darkblue 0%, whitesmoke 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    -moz-box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    -webkit-box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+/* Styling for the cards on the deck */
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: black;
+    font-size: 0;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    -moz-box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    -webkit-box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+    transform: rotateY(25deg);
+    transform-style: flat;
+    background: orange;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 48px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #f8de2e;
+    font-size: 32px;
+}
+
+/* Styling for the stars and scoreboard */
+.score-panel {
+    text-align: left;
+    width: 345px;
+    margin-bottom: 10px;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+    color: yellow;
+    font-size: 24px;
+}
+    
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Added a CSS style for the timer */
+.score-panel .timer {
+    margin-left: 100px;
+}
+.won {
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 32px;
+    opacity: 50%;
+}
+
+.won-content {
+    background-color: rgb(55, 5, 68);
+    color: whitesmoke;
+    margin: auto;
+    padding: 25px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    font-size: 24px;
+}

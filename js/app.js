@@ -103,7 +103,7 @@ function checkMatch() {
 
 // Returns win condition
 function hasWon() {
-  if (matched === 2) {
+  if (matched === 16) {
     return true;
   } else {
     return false;
@@ -195,7 +195,6 @@ function shuffle(array) {
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
   }
-
   return array;
 }
 

@@ -1,17 +1,22 @@
-# Memory Game Project
+# Memory Game After Dark
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+* [Introduction](#Introduction)
+* [Gameplay](#Gameplay)
 * [Contributing](#contributing)
 
-## Instructions
+## Introduction
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+This is a remake version of the classic game Memory Game.
+It's written using html, css and javascript to make it work and fun to play.
 
-To get started, open `js/app.js` and start building out the app's functionality
+## Gameplay
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+Are you ready to test your memory before the night falls?
+Your goal is to match 2 cards with the same picture on it within the shortest amount of time possible.
+
+There are a total of 16 cards and a total of 8 possible 2 card matches. If it takes too many moves, you will lose a bright yellow star. So the beat the dark, complete the game with as less moves as possible.
 
 ## Contributing
 
